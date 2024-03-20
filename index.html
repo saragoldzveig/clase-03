@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datos e información en gráficas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-lg-7 mx-auto py-5">
+        <h1 class="text-center display-4 my-2">Gráfica figurativa</h1>
+         <h2 class="text-center display-8 my-2">Sara Goldzveig</h2>
+         <p class="text">Usando Guemil para una doble representación, podemos generar un enfoque para la visualización de datos. Guemil permite combinar diferentes elementos visuales, como gráficos SVG y representaciones icónicas, para transmitir información de manera efectiva. Esta capacidad de crear una doble representación nos ofrece una perspectiva más completa de los datos, permitiéndonos comunicar conceptos complejos de manera concisa.</p>
+
+        <h3 class="text-center my-2">51_Avalanche_v15</h3>
+            <svg viewBox="0 0 100 100">
+                <defs>
+                    <clipPath id="clipping"><path d="M94.28,85.31a8.77,8.77,0,0,1-8.86,8.61H5.72V58.61l14.14-35.3,8.25-2.95h1.35l7.26,2.95L63.28,76.08c1.85,3.57,2.71,4.3,6,4.3h2.83L71,84.32H68.94c-4.79,0-6.76-.86-9.59-6.27L33.52,27.74l-4.8-2.09-5.53,2.09L13.1,52l8.36-3.56,8.61,5.65L39.54,52l16,31.37C57.87,87.89,60.82,90,67.71,90H85.42a4.68,4.68,0,1,0-4.67-4.67H76.81a8.67,8.67,0,0,1,8.61-8.74h.13a4.78,4.78,0,0,0-4.43-3.32,4.65,4.65,0,0,0-4.67,4.55H72.39a8.74,8.74,0,0,1,8.73-8.61c4.67,0,8.36,3.2,8.49,8.49A8.77,8.77,0,0,1,94.28,85.31ZM65.5,69.19,54.92,48h1.72l5.78,5.65,6.89,13.78a1.62,1.62,0,0,0,1.85,1.11h1.6l-1.23,3.93h-.62C67.84,72.51,67,72.14,65.5,69.19ZM59.35,31.43l12.3-6.76L59.35,17.9,61.56,14l12.06,7.38L73.25,7.2h4.67l-.37,14L89.48,14l2.34,3.94-12.3,6.77,12.3,6.76-2.34,3.94L77.55,28.11l.37,14H73.25L73.62,28,61.56,35.37Z"></clipPath>
+                </defs>
+                <image height="100%" width="100%" preserveAspectRatio="xMinYMin slice" xlink:href="https://raw.githubusercontent.com/saragoldzveig/clase-03/main/snow-avalanche-mountain-powerful-600nw-2204852401.webp" clip-path="url(#clipping)"/>
+            </svg>
+            
+            <p class="text">Usando <a href="https://www.guemil.info/" class="link-danger" target="_blank">Guemil</a> para una doble representación; el <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths" class="link-danger" target="_blank">path</a> que recorta es una representación y la <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image" class="link-danger" target="_blank">image</a> recortada es otra.</p>
+            
+            <svg viewBox="0 0 42 42">
+                <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ddd" stroke-width="2"></circle>
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#1D5DEC" stroke-width="2" stroke-dasharray="76 24" stroke-dashoffset="25"></circle>
+                <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="6" fill="#1D5DEC">76%</text>
+                <image x="15" y="10" width="12" height="12" xlink:href="https://raw.githubusercontent.com/Guemil/Guemil_Icons/master/01_Guemil_Icons_v15%20(2020)/Guemil_Icons_v15_svg_2020/51_Avalanche_v15.svg"></image>
+            </svg>
+
+            <p class="text">Entre las personas consultadas, un 76% refiere a la semejanza de lo visto con una salida de emergencia ya vista (lo que se está representando). El dato de éxito de la referencia también se podría presentar, si se aproxima a 8 en 10, como sigue:</p>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" class="my-4" viewBox="0 0 160 16" id="personas">
+            </svg>
+
+            <p class="text">En la presentación gráfica del dato de 8 en 10 se utilizó un <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_pictogramas.html" class="link-danger" target="_blank">Gráfico de pictogramas</a></p>
+        
+        </div>
+    </div>
+</div>
+
+<script>
+    for(let x = 0; x < 10; x++){
+        if(x < 8){
+            document.querySelector("#personas").innerHTML += `<path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0" fill="#1D5DEC" transform ="translate(${x*16} 0)"/>`
+        } else {
+            document.querySelector("#personas").innerHTML += `<path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0" fill="#ddd" transform ="translate(${x*16} 0)"/>`
+        }
+    }
+  </script>
+
+  <div class="container">
+     <h4 class="text-center my-2">44_Volcano_eruption_v15</h4>
+    <div class="row">
+        <div class="col-md-9 col-lg-7 mx-auto">
+            <svg viewBox="0 0 100 100">
+                <defs>
+                    <clipPath id="otroClipping"><path d="M8.15,23.52a2.39,2.39,0,0,1-2.46-2.46A2.46,2.46,0,0,1,8.15,18.6a2.65,2.65,0,0,1,2.46,2.46A2.55,2.55,0,0,1,8.15,23.52Zm50.8,28L92.65,87v1.48H6.55V87l32.1-35.43C36.81,44.43,33,40.74,28.2,40.74c-5.41,0-10,4.8-12.55,13.28a1.71,1.71,0,0,1-2.33,1.36A1.75,1.75,0,0,1,12,53c3.08-10.09,9-16,16.24-16,6.89,0,12.18,5.41,14.51,14.51h1.85v-.24c0-14-12.3-26.2-26.2-27.55a2,2,0,0,1-2-2,1.73,1.73,0,0,1,2-1.85c16,1.6,30.13,15.26,30.13,31.37v.24h1.24v-.24C49.73,28.19,64,9.5,83.18,9.5a1.78,1.78,0,0,1,2,1.84c0,1.11-.74,1.72-2,1.85-17,1.72-29.52,17.1-29.52,38.13v.24h1.6c2.09-13.28,8-20.66,16.48-20.66,7.38,0,13.53,5.78,16.24,14.76a2,2,0,0,1-1.35,2.71c-1.11.24-2-.5-2.34-1.73-2.22-7.5-7-12-12.55-12C65.47,34.59,60.79,40.37,59,51.56ZM11.23,60.05a2.76,2.76,0,0,1,2.46,2.58,2.55,2.55,0,0,1-2.46,2.46,2.6,2.6,0,0,1-2.71-2.46A2.8,2.8,0,0,1,11.23,60.05ZM44.93,27a2.58,2.58,0,0,1,5.16,0,2.58,2.58,0,0,1-5.16,0ZM88.72,53.78a2.76,2.76,0,0,1,2.46,2.58,2.55,2.55,0,0,1-2.46,2.46A2.61,2.61,0,0,1,86,56.36,2.8,2.8,0,0,1,88.72,53.78ZM94,11.47a2.55,2.55,0,0,1-2.46,2.46A2.67,2.67,0,0,1,89,11.47a2.6,2.6,0,0,1,2.59-2.59A2.5,2.5,0,0,1,94,11.47Z"></clipPath>
+                </defs>
+                <image height="100%" width="100%" preserveAspectRatio="xMinYMin slice" xlink:href="https://raw.githubusercontent.com/saragoldzveig/clase-03/main/impactantes-imagenes-erupcion-volcan-islandia_104.webp" clip-path="url(#otroClipping)" />
+            </svg>
+            
+            <p class="text">Usando <a href="https://www.guemil.info/" class="link-danger" target="_blank">Guemil</a> para una doble representación; el <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths" class="link-danger" target="_blank">path</a> que recorta es una representación y la <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image" class="link-danger" target="_blank">image</a> recortada es otra.</p>
+            
+            <svg viewBox="0 0 42 42">
+                <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ddd" stroke-width="2"></circle>
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FC4B08" stroke-width="2" stroke-dasharray="89 11" stroke-dashoffset="25"></circle>
+                <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="6" fill="#FC4B08">89%</text>
+                <image x="15" y="10" width="12" height="12" xlink:href="https://raw.githubusercontent.com/Guemil/Guemil_Icons/master/01_Guemil_Icons_v15%20(2020)/Guemil_Icons_v15_svg_2020/44_Volcano_eruption_v15.svg"></image>
+            </svg>
+
+            <p class="text">Entre las personas consultadas, un 89% refiere a la semejanza de lo visto con una salida de emergencia ya vista (lo que se está representando). El dato de éxito de la referencia también se podría presentar, si se aproxima a 9 en 10, como sigue:</p>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" class="my-4" viewBox="0 0 160 16" id="otrasPersonas">
+            </svg>
+
+            <p class="text">En la presentación gráfica del dato de 9 en 10 se utilizó un <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_pictogramas.html" class="link-danger" target="_blank">Gráfico de pictogramas</a></p>
+        
+        </div>
+    </div>
+</div>
+
+   <script>
+    for(let x = 0; x < 10; x++){
+        if(x < 9){
+            document.querySelector("#otrasPersonas").innerHTML += `<path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0" fill="#FC4B08" transform ="translate(${x*16} 0)"/>`
+        } else {
+            document.querySelector("#otrasPersonas").innerHTML += `<path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0" fill="#ddd" transform ="translate(${x*16} 0)"/>`
+        }
+    }
+  </script>
+</body>
+</html>
